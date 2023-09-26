@@ -48,7 +48,7 @@ const DisplayArea = ({ todolist, setTodoList, sortOrder }) => {
         todolist.map((li, ind) => (
           <div
             key={ind}
-            className={`border  dark:border-gray-800 ${transitionClass} border-gray-300 dark:bg-neutral-950 hover:dark:bg-neutral-900  p-2 flex items-center justify-between gap-2 my-1 rounded`}
+            className={`border  dark:border-gray-800 ${transitionClass} border-gray-300 dark:bg-neutral-950 hover:dark:bg-neutral-900 hover:bg-gray-300  p-2 flex items-center justify-between gap-2 my-1 rounded`}
           >
             <input
               type="checkbox"

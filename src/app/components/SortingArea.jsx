@@ -50,7 +50,7 @@ const SortingArea = ({ todolist, setTodoList, sort, setSort }) => {
       newSortOrder = Number(String(tempSort1) + String(e.target.value));
     }
 
-    console.log("new sor: ", newSortOrder);
+    // console.log("new sor: ", newSortOrder);
 
     window.localStorage.setItem("SORT_ORDER", newSortOrder);
     setSort(Number(newSortOrder));

@@ -12,7 +12,7 @@ const InputArea = ({ todolist, setTodoList, autoID, setAutoID, sortOrder }) => {
         { id: autoID, task: inputText, complete: false },
       ];
 
-      console.log("makeing with: ", sortOrder);
+      // console.log("makeing with: ", sortOrder);
 
       setTodoList(sorter(tempList, sortOrder));
 
