@@ -5,7 +5,7 @@ const Header = ({ children }) => {
   const routes = [
     {
       name: "GitHub",
-      url: "#",
+      url: "https://github.com/AzamBaltistani/todo-with-localstorage.git",
       icon: <AiFillGithub size={20} />,
     },
   ];
