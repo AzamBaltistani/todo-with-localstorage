@@ -32,7 +32,8 @@ const SortingArea = ({ todolist, setTodoList, sort, setSort }) => {
   useEffect(() => {
     setTempSort1(Number(String(sort)[0]));
     setTempSort2(Number(String(sort)[1]));
-    // console.log("hi temp2 : ", String(sort)[1]);
+    console.log("hi temp1 : ", String(sort)[0]);
+    console.log("hi temp2 : ", String(sort)[1]);
   }, [sort]);
 
   const handleSortButton = (e, number) => {
@@ -105,7 +106,7 @@ const SortingArea = ({ todolist, setTodoList, sort, setSort }) => {
         <select
           className="dark:bg-neutral-900 text-xs md:text-lg  bg-gray-200 hover:dark:bg-neutral-800 hover:bg-gray-300 hover:cursor-pointer  px-1 outline-none border rounded dark:border-gray-800  border-slate-300 h-8"
           onChange={(e) => handleSortButton(e, 1)}
-          defaultValue={tempSort1}
+          defaultValue={String(sort)[0]}
         >
           <option value={1}>Sort Input Order </option>
           <option value={2}>Sort Last First</option>
@@ -115,7 +116,7 @@ const SortingArea = ({ todolist, setTodoList, sort, setSort }) => {
         <select
           className="dark:bg-neutral-900 text-xs md:text-lg  bg-gray-200 hover:dark:bg-neutral-800 hover:bg-gray-300 hover:cursor-pointer  px-1 outline-none border rounded dark:border-gray-800  border-slate-300 h-8"
           onChange={(e) => handleSortButton(e, 2)}
-          defaultValue={tempSort2}
+          defaultValue={String(sort)[1]}
         >
           <option value={1}>Marks Default </option>
           <option value={2}>Marks End</option>
